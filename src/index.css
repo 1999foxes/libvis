@@ -1,0 +1,214 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  margin: 0;
+  /* border: 1px solid rgba(255, 0, 0, 0.2); */
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button, a {
+  font-size: 1em;
+  margin-right: 0.2em;
+  margin-left: 0.2em;
+  background: transparent;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+button:hover, a:hover {
+  text-decoration: underline;
+}
+
+li {
+  list-style: none;
+}
+
+#searchbar {
+  width: 20em;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  overflow: auto;
+  padding: 1em 2% 1em 2%;
+  background-color: #DCD85A;
+}
+
+#searchbar input {
+  width: 100%;
+  padding: 0.2em;
+  border: 2px solid rgba(0, 0, 0, 0.5);
+  border-radius: 2px;
+  background: rgba(255, 255, 255, 0.2);
+  font-size: 1em;
+}
+
+#searchbar .chosen {
+  font-weight: bold;
+}
+
+#searchbar #pagechanger {
+  position: absolute;
+  bottom: 1em;
+  right: 2em;
+  font-size: 1.2em;
+}
+
+#searchbar #pagechanger button {
+  font-size: 1.2em;
+}
+
+#searchbar ul {
+  margin-top: 1em;
+}
+
+#searchbar li {
+  list-style: none;
+  margin-top: 0.4em;
+}
+
+#searchbar li a {
+  color: black;
+  text-decoration: none;
+}
+
+#searchbar li a:hover {
+  text-decoration: underline;
+}
+
+#searchbar li a:visited {
+  color: #2A2875
+}
+
+#content {
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: calc(100% - 20em);
+  height: 100%;
+  background-color: #0F0E29;
+  overflow: auto;
+  color: #DCD85A;
+  padding: 4em 1em 1em 3em;
+}
+
+#content h2 {
+  font-size: 2.5em;
+  color: white;
+  margin-bottom: 0.3em;
+}
+
+#content h3 {
+  font-size: 1.5em;
+  color: white;
+  margin-bottom: 0.3em;
+}
+
+#content p {
+  margin-bottom: 0.2em;
+}
+
+#content li a {
+  color: #DCD85A;
+  text-decoration: none;
+}
+
+#content li a:hover {
+  text-decoration: underline;
+}
+
+#content li a:visited {
+  color: #A9A545
+}
+
+#addfavorite, #bingsearch {
+  color: #199CA3;
+  z-index: 99;
+  margin-right: 1em;
+}
+
+#bingsearch {
+  text-decoration: none;
+}
+
+#bingsearch:hover {
+  text-decoration: underline;
+}
+
+#favoritelist {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 20em;
+  height: 100%;
+  z-index: 1;
+  background: #199CA3;
+  overflow: auto;
+  padding: 3em 1em;
+}
+
+#favoritelist li, #favoritelist li a {
+  margin-bottom: 0.3em;
+  color: black !important;
+}
+
+#favoritelist #closemyfavorite {
+  position: absolute;
+  top: 0.5em;
+  left: 0.5em;
+  color: red;
+  font-size: 1em;
+}
+
+#relaventbooks {
+  margin-top: 3em;
+}
+
+#header {
+  position: fixed;
+  top: 0.5em;
+  right: 2em;
+  z-index: 98;
+}
+
+#header a, #header button {
+  color: #199CA3;
+}
+
+#content #chart {
+  width: 30vw;
+  height: 30vw;
+  float: right;
+}
+
+#content #chart #piechart {
+  width: 100%;
+}
+
+#content #date div {
+  margin: auto;
+  text-align: center;
+}
+
+#content #date div * {
+  display: inline;
+  color: #DCD85A;
+  font-size: 1.5em;
+}
+
+#content #date p {
+  color: white;
+}
+
+#content #date button:disabled {
+  color: #5C5A25;
+}
